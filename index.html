@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>application For forgetful people</title>
+</head>
+<body>
+  
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Reminder App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="main-bg">
+    <div class="glass-card">
+      <div class="header-row">
+        <div class="logo-img-small">
+          <img src="img/Screenshot 2025-06-13 141624.png" alt="Logo" />
+        </div>
+        <button id="logoutBtn" class="logout-btn" title="ออกจากระบบ">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+      </div>
+      <h2>ระบบเตือนความจำ</h2>
+      <form id="reminderForm" autocomplete="off">
+        <div class="input-group">
+          <i class="fa-solid fa-bell"></i>
+          <input type="text" id="reminderText" placeholder="เรื่องที่ต้องเตือน" required>
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-calendar-days"></i>
+          <input type="datetime-local" id="reminderTime" required>
+        </div>
+        <button type="submit" class="main-btn">เพิ่มการเตือน</button>
+      </form>
+      <ul id="reminderList"></ul>
+      <div id="notification" class="notification"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
